@@ -30,7 +30,7 @@ const Navbar = () => {
             <div className='sticky  top-0 z-50  shadow-sm bg-white w-full  min-h-[50px]' >
                 <div className='container  flex justify-between items-center  h-16 text-black'>
                     {/* Logo */}
-                    <a href="/" className='capitalize font-medium text-gray-900'>Mostefaoui Mohammed</a>
+                    <a href="/" className='capitalize font-medium text-gray-900'>john donne</a>
 
                     {/* Desktop Navigation */}
                     <ul className='hidden md:flex space-x-4 capitalize text-gray-700'>
@@ -43,14 +43,14 @@ const Navbar = () => {
                         ))}
                         <li>
                             <a href="#contact"
-                                className="bg-blue-700 py-2 px-6 text-white rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 hover:bg-blue-800">contact</a>
+                                className="bg-green-600 py-2 px-6 text-white rounded-full focus:outline-none focus:ring-2 focus:ring-green-400 hover:bg-green-800">contact</a>
                         </li>
 
                     </ul>
 
                     {/* Mobile Navigation Icon */}
                     <div onClick={handleNav} className='block md:hidden'>
-                        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+                        {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
                     </div>
 
                     {/* Mobile Navigation Menu */}
@@ -62,18 +62,18 @@ const Navbar = () => {
                         }
                     >
                         {/* Mobile Logo */}
-                        <h1 className='w-full text-2xl font-bold text-[#00df9a] m-4'>Mohammed Mostefaoui</h1>
+                        <h1 className='w-full text-2xl font-bold text-green-600 m-4'>john donne</h1>
 
                         {/* Mobile Navigation Items */}
                         {navItems.map(item => (
                             <li
                                 key={item.id}
-                                className='p-4 hover:bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-black'
+                                className='p-4 hover:bg-green-600 rounded-xl m-2 cursor-pointer duration-300 hover:text-black'
                             >
                                 <a href={item.link}>{item.text}</a>
                             </li>
                         ))}
-                        <li className='p-4 bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-black'>
+                        <li className='p-4 bg-green-600 rounded-xl m-2 cursor-pointer duration-300 hover:text-black'>
                             <a href='#contact'>Contact</a>
                         </li>
                     </ul>

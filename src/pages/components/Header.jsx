@@ -1,4 +1,4 @@
-import ImgHeader from "../../assets/images/header.webp"
+import ImgHeader from "../../assets/images/header.svg"
 
 function Header() {
     return (
@@ -7,7 +7,7 @@ function Header() {
                 <div className="flex items-center h-full">
                     <div className="w-full md:w-3/5">
                         <h1 className="text-center md:text-left text-5xl md:text-6xl text-gray-900 capitalize font-semibold">
-                            Hi, I'm Mohammed Mostefaoui, I'm Mobile Developer.
+                            Hi, I'm john donne, I'm web Developer.
                         </h1>
                     </div>
                     <div className="hidden md:block md:w-2/5">

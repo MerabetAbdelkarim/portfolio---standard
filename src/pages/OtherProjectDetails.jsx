@@ -1,16 +1,14 @@
 import { useParams } from "react-router-dom"
-import { ListProjects } from "../Data/ListProjects"
 import { ListOtherProjects } from "../Data/ListOtherProjects"
-import Fancybox from "./components/Fancybox"
 
 
 
 
 
 
-function ProjectDetails() {
+function OtherProjectDetails() {
     const { id } = useParams()
-    const project = ListProjects.find((item) => (item.id === id))
+    const project = ListOtherProjects.find((item) => (item.id === id))
 
     return (
         <div>
@@ -74,4 +72,4 @@ function ProjectDetails() {
     )
 }
 
-export default ProjectDetails
+export default OtherProjectDetails
